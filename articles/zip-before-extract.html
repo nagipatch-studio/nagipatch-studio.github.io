@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>日本語ZIPをWindowsで開く前に確認したい4項目</title>
+<meta name="description" content="ZIPをWindowsで展開する前に、文字化け候補、危険なパス、名前衝突、極端な展開サイズを確認する考え方を説明します。">
+<link rel="stylesheet" href="../assets/style.css"></head><body>
+<header><nav><a href="../index.html">NagiPatch Studio</a></nav><p class="eyebrow">ZIP GUIDE</p><h1>日本語ZIPをWindowsで開く前に確認したい4項目</h1></header>
+<main><p class="lead">ZIPは展開して初めて、文字化けやWindowsで扱いにくい名前に気づくことがあります。</p>
+<h2>展開前に確認したいこと</h2><ol><li>ファイル名の文字コード候補が利用環境と合うか。</li><li>絶対パスや <code>..</code> など、展開先の外を指し得る名前がないか。</li><li>大文字小文字やUnicode正規化後に、別の名前同士が衝突しないか。</li><li>ファイル数、合計展開サイズ、単一ファイルサイズ、圧縮率が想定内か。</li></ol>
+<p>たとえば <code>素材/表情.png</code>、<code>素材/表情.PNG</code>、<code>../設定.txt</code> のような架空の一覧では、Windows上の名前衝突や展開先を外れるパスを事前に確認する理由があります。</p>
+<h2>展開せずに診断する</h2><p>ArchiveFix Localは、ZIPを展開・変更・外部送信せず、確認事項を日本語で表示するWindows向け診断ツールです。JSONとテキストのレポートを保存でき、診断前後のSHA-256を照合します。</p>
+<p class="notice">名前の検査だけでファイルの安全性は保証できません。マルウェア検査、ZIP修復、内容物の正当性判定は行いません。</p>
+<p><a class="button" href="https://nagipatch.booth.pm/items/8681762?utm_source=owned_article&amp;utm_medium=referral&amp;utm_campaign=archive_preopen_202608">ArchiveFix Localの商品ページ</a></p></main>
+<footer><a href="../index.html">記事一覧へ戻る</a></footer></body></html>
