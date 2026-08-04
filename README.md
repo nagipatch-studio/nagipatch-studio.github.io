@@ -1,1 +1,13 @@
-# nagipatch-studio.github.io
+# NagiPatch Studio site staging
+
+GitHub Pages 公開前の静的サイト原稿です。公開対象はこのディレクトリ内だけとし、商品ZIP、アプリのソース、秘密情報、顧客情報を含めません。
+
+## 公開前手順
+
+1. H-004 完了後、報告されたGitHubユーザー名で公開用リポジトリを作成する。
+2. `index.html`、`articles/`、`assets/` を配置する。
+3. GitHub Pagesを有効にし、公開URLを直接確認する。
+4. 商品リンク、表示崩れ、モバイル表示、記事の制限事項を確認する。
+5. 公開日時と取得できた集計値だけを記録する。
+
+外部ライブラリ、Cookie、フォーム、解析タグは使用していません。
