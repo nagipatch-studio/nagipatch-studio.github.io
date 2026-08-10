@@ -1,120 +1,137 @@
 <!doctype html>
-<!-- UI/UX refresh: 2026-08-07 -->
 <html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>週間配信スケジュール画像メーカー | NagiPatch Studio</title>
-  <meta name="description" content="7日分の配信予定を一度入力し、PC用1920×1080とスマホ用1080×2400の週間スケジュール画像をまとめて作成するWindowsツール。">
+  <title>VTuber配信スケジュールの作り方・素材編集Tips | NagiPatch Studio</title>
+  <meta name="description" content="VTuber・配信者向けに、Canvaで週間予定を作る方法、BOOTHで購入した背景素材を編集する手順、PC・スマホ用画像を揃えるコツを紹介します。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VTuber配信スケジュールの作り方・素材編集Tips">
+  <meta property="og:description" content="Canva・BOOTH背景素材・横長と縦長。自分に合う週間予定画像の作り方を選べます。">
+  <meta property="og:image" content="https://nagipatch-studio.github.io/assets/og-vtuber-tips.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="home">
+<body class="home blog-home">
   <header class="site-header shell">
-    <a class="brand" href="index.html" aria-label="NagiPatch Studio ホーム">
+    <a class="brand" href="index.html" aria-label="NagiPatch 配信TIPS ホーム">
       <span class="brand-mark" aria-hidden="true">NP</span>
-      <span>NagiPatch Studio</span>
+      <span>NagiPatch 配信TIPS</span>
     </a>
     <nav class="site-nav" aria-label="メインナビゲーション">
-      <a href="#tools">ツール</a>
-      <a href="guides.html">ガイド</a>
-      <a href="#principles">私たちの方針</a>
+      <a href="#howto">作り方</a>
+      <a href="guides.html">Tips一覧</a>
+      <a href="#tool">便利ツール</a>
     </nav>
   </header>
 
   <main class="page-shell">
-    <section class="hero shell" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">VTUBER WEEKLY SCHEDULE MAKER</p>
-        <h1 id="hero-title">7日分を入力して、<br><span>PC・スマホ用</span>をまとめて完成。</h1>
-        <p class="lead">毎週の配信予定を一度入力するだけ。PC向けとスマホ向け、2種類の週間スケジュール画像を同じ内容から作れます。</p>
-        <div class="hero-actions">
-          <a class="button" href="https://nagipatch.booth.pm/items/8700832?utm_source=owned_site&amp;utm_medium=referral&amp;utm_campaign=portfolio_home_202608&amp;utm_content=hero_vtuber_schedule">BOOTHで見る <span>980円</span></a>
-          <a class="text-link" href="articles/vtuber-weekly-schedule-pc-smartphone.html">使い方と作例を見る <span aria-hidden="true">→</span></a>
+    <section class="blog-hero shell" aria-labelledby="hero-title">
+      <div class="blog-hero-copy">
+        <p class="eyebrow">VTUBER CREATOR TIPS</p>
+        <h1 id="hero-title">週間配信スケジュール画像の<br><span>作り方と見やすくするコツ</span></h1>
+        <p class="lead">Canvaで一から作る方法、BOOTHで購入した背景素材を編集する方法、横長・縦長の2サイズを揃える考え方を、初心者向けにまとめます。</p>
+        <div class="topic-pill-row" aria-label="この記事で分かること">
+          <span>無料で作る</span><span>購入素材を使う</span><span>毎週更新しやすくする</span>
         </div>
       </div>
-      <div class="hero-note" aria-label="週間配信スケジュール画像メーカーの出力">
-        <p class="hero-note-label">2サイズを一括作成</p>
-        <p>PC用 1920×1080</p>
-        <p>スマホ用 1080×2400</p>
-        <p>画像を外部送信しない</p>
-      </div>
+      <aside class="blog-hero-aside" aria-label="最初に用意するもの">
+        <p class="hero-note-label">最初に用意するもの</p>
+        <ol>
+          <li>7日分の配信予定</li>
+          <li>透過PNGの立ち絵</li>
+          <li>使いたい背景・テーマ色</li>
+        </ol>
+      </aside>
     </section>
 
-    <section class="section shell" id="tools" aria-labelledby="tools-title">
+    <section class="section shell" id="howto" aria-labelledby="howto-title">
       <div class="section-heading">
-        <div>
-          <p class="eyebrow">WINDOWS TOOLS</p>
-          <h2 id="tools-title">毎週の予定画像を、つくりやすく</h2>
-        </div>
-        <p>販売中の2ツール</p>
+        <div><p class="eyebrow">HOW TO START</p><h2 id="howto-title">3つの作り方から選ぶ</h2></div>
+        <p>作業時間と自由度で比較</p>
       </div>
-
-      <div class="product-grid">
-        <article class="product-card product-card-featured">
-          <div class="product-copy">
-            <div class="card-topline"><span class="badge badge-new">MAIN</span><span>VTuber・配信者向け</span></div>
-            <h3>週間配信スケジュール画像メーカー</h3>
-            <p>7日分の予定と立ち絵を設定し、PC用とスマホ用の週間予定画像を同じ内容からまとめて作成します。</p>
-            <ul class="feature-list" aria-label="主な特徴">
-              <li>PC・スマホ画像を同時作成</li>
-              <li>立ち絵をサイズ別に調整</li>
-              <li>4つの内蔵テーマ</li>
-            </ul>
-            <a class="button" href="https://nagipatch.booth.pm/items/8700832?utm_source=owned_site&amp;utm_medium=referral&amp;utm_campaign=portfolio_home_202608&amp;utm_content=vtuber_schedule_featured">BOOTHで見る <span>980円</span></a>
-          </div>
-          <figure class="product-visual">
-            <img src="assets/vtuber-schedule-cover.jpg" alt="週間配信スケジュール画像メーカーのPC用・スマホ用完成イメージ" width="800" height="450">
-          </figure>
-        </article>
-
-        <article class="product-card product-card-compact">
-          <div class="card-topline"><span class="badge">TOOL</span><span>アクリルグッズ入稿</span></div>
-          <h3>白版・カットライン作成</h3>
-          <p>透過PNGから、白版PNG・カットラインSVG・確認PNGをまとめて作成。通常入稿で素材を自分で用意する方向けです。</p>
-          <a class="button button-secondary" href="https://nagipatch.booth.pm/items/8690554?utm_source=owned_site&amp;utm_medium=referral&amp;utm_campaign=portfolio_home_202608&amp;utm_content=acrylic_secondary">BOOTHで見る <span>480円</span></a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section shell" id="guides" aria-labelledby="guides-title">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">PRACTICAL GUIDES</p>
-          <h2 id="guides-title">目的からガイドを探す</h2>
-        </div>
-        <a class="text-link" href="guides.html">すべてのガイド <span aria-hidden="true">→</span></a>
-      </div>
-
-      <div class="topic-grid">
-        <a class="topic-card topic-cyan" href="guides.html#vtuber-schedule">
-          <span class="topic-index">01</span>
-          <div><h3>VTuber週間予定</h3><p>PC・スマホ向け画像を揃える</p></div>
-          <span class="topic-count">1本</span>
+      <div class="method-grid">
+        <a class="method-card method-canva" href="articles/vtuber-schedule-canva.html">
+          <span class="method-number">01</span>
+          <p class="method-label">無料から始める</p>
+          <h3>Canvaで一から作る</h3>
+          <p>テンプレートや図形を使い、背景・曜日・時刻・立ち絵を自分で配置します。デザインを細かく調整したい人向けです。</p>
+          <span class="read-more">手順を見る →</span>
         </a>
-        <a class="topic-card topic-purple" href="guides.html#acrylic">
-          <span class="topic-index">02</span>
-          <div><h3>アクリルグッズ制作</h3><p>白版・カットライン・入稿前確認</p></div>
-          <span class="topic-count">3本</span>
+        <a class="method-card method-booth" href="articles/vtuber-schedule-booth-background.html">
+          <span class="method-number">02</span>
+          <p class="method-label">好きな世界観を使う</p>
+          <h3>BOOTHの背景素材を編集する</h3>
+          <p>購入した背景へ予定表と立ち絵を重ねます。加工・収益化利用・クレジットなど、素材ごとの規約確認が大切です。</p>
+          <span class="read-more">手順を見る →</span>
+        </a>
+        <a class="method-card method-dual" href="articles/vtuber-weekly-schedule-pc-smartphone.html">
+          <span class="method-number">03</span>
+          <p class="method-label">投稿先に合わせる</p>
+          <h3>横長・縦長の2サイズを揃える</h3>
+          <p>同じ予定を別々に打ち直さず、内容を一つにまとめてから横長と縦長へ展開する方法です。</p>
+          <span class="read-more">考え方を見る →</span>
         </a>
       </div>
     </section>
 
-    <section class="principles shell" id="principles" aria-labelledby="principles-title">
+    <section class="editorial-band shell" aria-labelledby="basics-title">
       <div>
-        <p class="eyebrow">OUR PRINCIPLES</p>
-        <h2 id="principles-title">手元のファイルを、<br>安心して扱える設計。</h2>
+        <p class="eyebrow">BEFORE DESIGN</p>
+        <h2 id="basics-title">背景を選ぶ前に、<br>予定内容をテキストで固める。</h2>
+        <p>先にデザインを始めると、配信時刻の変更でレイアウト全体を直すことになりがちです。まず7日分の情報を短い文章で揃え、そのあと背景と立ち絵を決めると作業が戻りにくくなります。</p>
       </div>
-      <ul class="principle-list">
-        <li><span>01</span><div><strong>ローカル処理</strong><p>対応する処理はPC内で完結します。</p></div></li>
-        <li><span>02</span><div><strong>元ファイルを保持</strong><p>入力したファイルを勝手に変更しません。</p></div></li>
-        <li><span>03</span><div><strong>購入前に範囲を明記</strong><p>できることと対象外を先に説明します。</p></div></li>
-      </ul>
+      <ol class="editorial-checklist">
+        <li><span>01</span><div><strong>曜日・日付・開始時刻</strong><p>表記を全日で統一します。</p></div></li>
+        <li><span>02</span><div><strong>配信タイトル</strong><p>画像では一目で読める長さにします。</p></div></li>
+        <li><span>03</span><div><strong>配信先</strong><p>YouTube、Twitchなど必要な場合だけ記載します。</p></div></li>
+        <li><span>04</span><div><strong>休みの日</strong><p>空欄より「おやすみ」と明記すると伝わります。</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section shell" aria-labelledby="tips-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">READABILITY TIPS</p><h2 id="tips-title">見やすい予定画像の基本</h2></div>
+      </div>
+      <div class="tips-grid">
+        <article class="tip-card"><span>01</span><h3>文字の後ろを暗くする</h3><p>写真や柄の上へ直接文字を置かず、半透明の帯やカードを敷くと読みやすくなります。</p></article>
+        <article class="tip-card"><span>02</span><h3>情報の強弱をつける</h3><p>開始時刻を太く、配信先を小さくするなど、重要度に合わせて文字サイズを変えます。</p></article>
+        <article class="tip-card"><span>03</span><h3>立ち絵と予定を分ける</h3><p>立ち絵が予定欄へ重ならない領域を決め、スマホ表示でも文字が隠れないようにします。</p></article>
+        <article class="tip-card"><span>04</span><h3>完成後に縮小して読む</h3><p>画像を小さく表示し、曜日・時刻・タイトルがすぐ読めるかを確認します。</p></article>
+      </div>
+    </section>
+
+    <section class="tool-section shell" id="tool" aria-labelledby="tool-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">WHEN WEEKLY EDITING FEELS HEAVY</p><h2 id="tool-title">毎週の更新を、もっと短くしたいとき</h2></div>
+        <p>ここから商品紹介です</p>
+      </div>
+      <article class="product-card product-card-featured">
+        <div class="product-copy">
+          <div class="card-topline"><span class="badge badge-new">WINDOWS</span><span>VTuber・配信者向け</span></div>
+          <h3>週間配信スケジュール画像メーカー</h3>
+          <p>7日分の予定を一度入力し、PC用とスマホ用の週間予定画像をまとめて作成します。背景テーマと立ち絵の位置を確認しながら、毎週の変更を同じ画面で終えられます。</p>
+          <ul class="feature-list" aria-label="主な特徴">
+            <li>PC・スマホ画像を同時作成</li>
+            <li>立ち絵をサイズ別に調整</li>
+            <li>画像を外部送信しない</li>
+          </ul>
+          <a class="button" href="https://nagipatch.booth.pm/items/8700832?utm_source=owned_site&amp;utm_medium=referral&amp;utm_campaign=vtuber_tips_home_202608&amp;utm_content=article_end_product">BOOTHで詳しく見る <span>980円</span></a>
+        </div>
+        <figure class="product-visual">
+          <img src="assets/vtuber-schedule-cover.jpg" alt="週間配信スケジュール画像メーカーのPC用・スマホ用完成イメージ" width="800" height="450">
+        </figure>
+      </article>
+      <aside class="secondary-tool">
+        <div><span class="badge">OTHER TOOL</span><h3>アクリルグッズ用の白版・カットライン作成</h3><p>通常入稿用の白版PNG・カットラインSVG・確認画像をまとめて作るWindowsツールも販売しています。</p></div>
+        <a class="text-link" href="https://nagipatch.booth.pm/items/8690554?utm_source=owned_site&amp;utm_medium=referral&amp;utm_campaign=vtuber_tips_home_202608&amp;utm_content=other_tool">BOOTHで見る（480円） <span aria-hidden="true">→</span></a>
+      </aside>
     </section>
   </main>
 
   <footer class="site-footer shell">
-    <a class="brand brand-small" href="index.html"><span class="brand-mark" aria-hidden="true">NP</span><span>NagiPatch Studio</span></a>
-    <p>個人制作の仕上げを助けるWindowsツール</p>
+    <a class="brand brand-small" href="index.html"><span class="brand-mark" aria-hidden="true">NP</span><span>NagiPatch 配信TIPS</span></a>
+    <p>配信者の画像づくりを分かりやすく</p>
     <p>© 2026 NagiPatch Studio</p>
   </footer>
 </body>
